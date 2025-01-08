@@ -11,15 +11,6 @@ provider "google" {
   project = var.project_id
   region  = var.region
   zone    = var.zone
+  credential = var.gcp_sa_key
 }
 
-terraform { 
-  cloud { 
-    
-    organization = "Sample_test" 
-
-    workspaces { 
-      name = "gcp-workspace" 
-    } 
-  } 
-}
