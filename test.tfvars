@@ -1,6 +1,0 @@
-project_id   = "my-test-project"
-region       = "us-central1"
-zone         = "us-central1-b"
-machine_type = "e2-medium"
-disk_image   = "projects/debian-cloud/global/images/family/debian-11"
-network      = "default"
