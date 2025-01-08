@@ -13,5 +13,8 @@ resource "google_compute_instance" "vm_instance" {
     network = var.network
     access_config {
     }
+    metadata = {
+    foo = "bar"
+  }
   }
 }
