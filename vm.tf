@@ -1,5 +1,5 @@
 resource "google_compute_instance" "vm_instance" {
-  name         = "vm-${terraform.workspace}"
+  name         = var.name
   machine_type = var.machine_type
   zone         = var.zone
 
@@ -13,9 +13,5 @@ resource "google_compute_instance" "vm_instance" {
     network = var.network
     access_config {
     }
-  }
-
-  metadata = {
-    workspace = terraform.workspace
   }
 }
